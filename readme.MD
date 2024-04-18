@@ -21,3 +21,6 @@ git push -u origin main
 
 **naming convention: use small case with hyphens(-)**
 
+*
+git add . ; git commit -m "onetime adding all" ; git push -u origin main
+
