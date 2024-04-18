@@ -1,2 +1,3 @@
-# this si dummy i dont want to push
+#!/bin/bash
+echo "Hello I am learning devops"
 sample1
