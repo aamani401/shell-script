@@ -1,5 +1,8 @@
 #!/bin/bash
 USERID=$(id -u)
+DATETIME=$(date +%F-%H-%M-%S)
+FILENAME=$($0 | cut -d '.' -f1)
+LOGFILENAME=$($FILENAME-$DATETIME).LOG
 echo "$USERID"
 
 VALIDATE(){
@@ -19,9 +22,9 @@ else
     echo "You are a superuser"
 fi
 
-dnf install mysql -y
+dnf install mysql -y $>>$LOGFILENAME
 VALIDATE $? "Installing mysql"
 
-dnf install git -y
+dnf install git -y &>>$LOGFILENAME
 VALIDATE $? "Installing git"
 
