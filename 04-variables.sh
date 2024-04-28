@@ -1,7 +1,7 @@
 #!/bin/bash
-#declare variables
-person1=sekhar #nospace between = and value
-person2=bram
+
+person1=$1 #nospace between = and value
+person2=$2
 #referring variables
 echo "$person1:Hi $person2" # "$" is considered it as variable
 echo "$person2: Hi $person1 how are you:"
