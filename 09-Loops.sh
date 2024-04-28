@@ -1,7 +1,7 @@
 #!/bin/bash
 
-$input=$1
-if[$input -ne 5]
+input=$1
+if[ $input -ne 5 ]
 then
     echo "$input not equal to 5"
 else
