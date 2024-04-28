@@ -22,7 +22,7 @@ then
     echo "run script with super user access"
     exit 1
 else 
-    echo "You are a $G superuser $N"
+    echo -e "You are a $G superuser $N"
 fi
 
 dnf install mysql -y &>>$LOGFILENAME
