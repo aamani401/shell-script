@@ -10,7 +10,7 @@ else
     echo "You are a superuser"
 fi
 
-dnf install mysqll -y
+dnf install mysql -y
 if [ $? -ne 0 ]
 then
     echo "installation of mysql is not success"
