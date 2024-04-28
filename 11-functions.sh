@@ -2,7 +2,7 @@
 USERID=$(id -u)
 DATETIME=$(date +%F-%H-%M-%S)
 FILENAME=$( echo $0 | cut -d '.' -f1 )
-LOGFILENAME=$($FILENAME-$DATETIME).LOG
+LOGFILENAME=/tmp/$FILENAME-$DATETIME.LOG
 echo "$USERID"
 
 VALIDATE(){
