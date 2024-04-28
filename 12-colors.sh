@@ -3,10 +3,10 @@ USERID=$(id -u)
 DATETIME=$(date +%F-%H-%M-%S)
 FILENAME=$( echo $0 | cut -d '.' -f1 )
 LOGFILENAME=/tmp/$FILENAME-$DATETIME.LOG
-R=\e[31m
-G=\e[32m
-Y=\e[33m
-N=\e[0m
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
