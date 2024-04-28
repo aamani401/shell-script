@@ -43,10 +43,10 @@ do
 
 done
 
-dnf install mysql -y &>>$LOGFILENAME
-VALIDATE $? "Installing mysql"
+#dnf install mysql -y &>>$LOGFILENAME
+#VALIDATE $? "Installing mysql"
 
-dnf install git -y &>>$LOGFILENAME
-VALIDATE $? "Installing git"
+#dnf install git -y &>>$LOGFILENAME
+#VALIDATE $? "Installing git"
 
 
