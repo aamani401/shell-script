@@ -1,7 +1,8 @@
 #!/bin/bash
+#declare variables
 person1=aam
 person2=bram
-
-echo "$person1:Hi Bram"
-echo "$person2: Hi aam how are you:"
+#referring variables
+echo "$person1:Hi $person2"
+echo "$person2: Hi $person1 how are you:"
 echo "$person1 : Am good dear"

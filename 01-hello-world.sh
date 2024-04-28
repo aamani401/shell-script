@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Hello I am learning devops"
-sample1
+echo "Hello I am learning devops aamani"
+
