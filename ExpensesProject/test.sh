@@ -8,5 +8,5 @@ LOGFILENAME=/tmp/$FILENAME-$DATETIME.LOG
 echo "$DATETIME"
 echo "$FILENAME"
 echo "$LOGFILENAME"
-dnf install mysql-server -y &>>LOGFILENAME
+dnf install mysql-server -y &>>$LOGFILENAME
 echo "$? output"
