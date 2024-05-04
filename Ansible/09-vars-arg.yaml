@@ -10,7 +10,5 @@
   # private: false
   tasks:
   - name: vars pass with args
-    vars:
-      username: "aam from task"
     ansible.builtin.debug:
       msg: "Hi {{username}}"
