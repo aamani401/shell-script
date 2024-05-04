@@ -2,7 +2,7 @@
   hosts: web
   vars:
    username: "aam-from-playbook"
-  vars:
+  vars_files:
   - vars.yaml
   vars_prompt:
   - name: username
