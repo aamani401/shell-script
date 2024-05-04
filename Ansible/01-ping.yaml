@@ -1,1 +1,7 @@
-aa
+- name: pinging node server
+  hosts: web
+  tasks:
+  - name: Ping node
+    ansible.builtin.ping:
+
+
