@@ -1,0 +1,6 @@
+- name: ping
+  inventory : web
+  tasks:
+  - name: Pinging the server
+    ansible.buildin.ping:
+
