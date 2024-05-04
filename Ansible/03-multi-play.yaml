@@ -1,12 +1,13 @@
 - name: multiplay-1
   hosts: web
   become: yes
-  - tasks:
+  - name: play-1 and task-1
     ansible.builtin.debug:
       msg: "Hi I am aam from task1"
 
 - name: multiplay-2
   hosts: web
-  - tasks:
+  tasks:
+  - name: play-2 and task-1
     ansible.builtin.debug:
       msg: "Hi I am bram from task2"
