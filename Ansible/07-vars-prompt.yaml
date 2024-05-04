@@ -1,13 +1,13 @@
 - name: variables from files
   hosts: web
   vars_prompt:
-  - username: USERNAME
+  - name: USERNAME
     prompt: enter username
     private: false
-  - username: PASSWORD
+  - name: PASSWORD
     prompt: enter password
     private: true
   tasks:
-  - name: variables in task
+  - name: variables in prompt
     ansible.builtin.debug:
       msg: "Welcome given {{USERNAME}} and {{PASSWORD}} "
