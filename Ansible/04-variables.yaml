@@ -1,5 +1,5 @@
 - name: variables
-  hosts:  web
+  hosts: web
   vars:
     course: "Devops"
     duration: "120"
@@ -7,4 +7,4 @@
   tasks:
   - name : variables
     ansible.builtin.debug:
-      msg: "I am learning {{course}} {{from}} and duration is {{duration}}hrs"
+      msg: "I am learning {{course}} {{from}} and duration is {{duration}} hrs"
