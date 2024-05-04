@@ -2,8 +2,8 @@
   hosts: web
   vars:
     username: "aam-from-playbook"
-  #vars_files:
-  #- vars.yaml
+  vars_files:
+  - vars.yaml
   #vars_prompt:
   #- name: username
   # prompt: enter username
