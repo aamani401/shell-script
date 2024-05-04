@@ -1,16 +1,16 @@
 - name: vars sequence
   hosts: web
   vars:
-   username: "aam-from-playbook"
-  vars_files:
-  - vars.yaml
-  vars_prompt:
-  - name: username
-    prompt: enter username
-    private: false
+    username: "aam-from-playbook"
+  #vars_files:
+  #- vars.yaml
+  #vars_prompt:
+  #- name: username
+  # prompt: enter username
+  # private: false
   tasks:
   - name: vars pass with args
     vars:
       username: "aam from task"
-      ansible.builtin.debug:
-        msg: "Hi {{username}}"
+    ansible.builtin.debug:
+      msg: "Hi {{username}}"
