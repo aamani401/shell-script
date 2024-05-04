@@ -10,3 +10,7 @@
       course: "Terraform"
     ansible.builtin.debug:
       msg: "I am learning {{course}} from {{trainer}} and duration is {{duration}} hrs"
+  
+- name: variables
+    ansible.builtin.debug:
+      msg: "I am learning {{course}} from {{trainer}} and duration is {{duration}} hrs"
