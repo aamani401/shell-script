@@ -5,6 +5,6 @@
     duration: "120"
     from: "siva"
   tasks:
-  - name : variables
+  - name: variables
     ansible.builtin.debug:
       msg: "I am learning {{course}} {{from}} and duration is {{duration}} hrs"
