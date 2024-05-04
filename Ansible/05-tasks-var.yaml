@@ -5,12 +5,12 @@
     duration: "120"
     trainer: "siva"
   tasks:
-  - name: variables
+  - name: variables in task
     vars:
       course: "Terraform"
     ansible.builtin.debug:
       msg: "I am learning {{course}} from {{trainer}} and duration is {{duration}} hrs"
   
-- name: variables
+  - name: variables in tasks
     ansible.builtin.debug:
       msg: "I am learning {{course}} from {{trainer}} and duration is {{duration}} hrs"
