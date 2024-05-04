@@ -5,12 +5,12 @@
   vars:
   - vars.yaml
   vars_prompt:
-   name: username
-   prompt: enter username
-   private: false
+  - name: username
+    prompt: enter username
+    private: false
   tasks:
   - name: vars pass with args
     vars:
       username: "aam from task"
-    ansible.builtin.debug:
-      msg: "Hi {{username}}"
+      ansible.builtin.debug:
+        msg: "Hi {{username}}"
