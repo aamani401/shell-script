@@ -3,8 +3,8 @@
   vars:
     course: "Devops"
     duration: "120"
-    from: "siva"
+    trainer: "siva"
   tasks:
   - name: variables
     ansible.builtin.debug:
-      msg: "I am learning {{course}} {{from}} and duration is {{duration}} hrs"
+      msg: "I am learning {{course}} from {{trainer}} and duration is {{duration}} hrs"
