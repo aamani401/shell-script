@@ -3,4 +3,4 @@
   tasks:
   - name: Nginx
     ansible.builin.dnf
-    state: installed
+    state: Installed
