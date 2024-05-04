@@ -3,4 +3,4 @@
   tasks:
     ansible.builtin.dnf:
     name: nginx
-    state: Installed
+    state: latest
