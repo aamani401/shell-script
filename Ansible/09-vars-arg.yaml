@@ -4,10 +4,10 @@
     username: "aam-from-playbook"
   vars_files:
   - vars.yaml
-  #vars_prompt:
-  #- name: username
-  # prompt: enter username
-  # private: false
+  vars_prompt:
+  - name: username
+    prompt: enter username
+    private: false
   tasks:
   - name: vars pass with args
     ansible.builtin.debug:
