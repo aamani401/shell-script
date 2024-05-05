@@ -1,0 +1,17 @@
+- name: Print datatypes
+  hosts: web
+  vars:
+    course: "Devops with AWS" #string
+    tools: #list
+    - linux
+    - shell
+    - ansible
+    duration: #map or directory
+     devops: 3
+     aws: 2
+     Linux: 1
+    isrealtime: true
+  tasks:
+  - name: print datatypes
+    ansible.builtin.debug
+      msg: " {{course}} includes {{tools}} and {{duration}} and is relatime {{isrealtime}}"

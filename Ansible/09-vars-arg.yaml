@@ -13,7 +13,7 @@
     ansible.builtin.debug:
       msg: "Hi {{username}}"
 
-#1.arg
+#1.argument var
 #2.variable in task
 #3.variable file
 #4.variable in prompt
