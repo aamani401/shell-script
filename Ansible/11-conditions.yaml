@@ -4,8 +4,8 @@
   tasks:
   - name: check id
     ansible.builtin.command: id expense
-      register: USERID
+      #register: USERID
       ignore_errors: true
   - name: see the putput
     ansible.builtin.debug:
-      msg: "see the output {{USERID}}"
+      msg: "see the output"
