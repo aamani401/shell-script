@@ -1,0 +1,11 @@
+- name: condition
+  hosts: web
+  become: yes
+  tasks:
+  - name: check id
+    ansible.builtin.command: expense id
+      register: USERID
+      ignoreerror: true
+  -name: see the putput
+    ansible.builtin.debug:
+      msg: "see the output {{USERID}}"
