@@ -9,4 +9,4 @@
 
   - name: see the putput
     ansible.builtin.debug:
-      msg: "see the output"
+      msg: "see the output {{USERID}}"
