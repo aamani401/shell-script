@@ -13,5 +13,5 @@
     isrealtime: true
   tasks:
   - name: print datatypes
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: " {{course}} includes {{tools}} and {{duration}} and is relatime {{isrealtime}}"
