@@ -2,13 +2,18 @@
   hosts: web
   vars:
     username: "aam-from-playbook"
-  vars_files:
-  - vars.yaml
-  vars_prompt:
-  - name: username
-    prompt: enter username
-    private: false
+  # vars_files:
+  # - vars.yaml
+  # vars_prompt:
+  # - name: username
+  #   prompt: enter username
+  #   private: false
   tasks:
   - name: vars pass with args
     ansible.builtin.debug:
       msg: "Hi {{username}}"
+
+#1.arg
+#2.variable in task
+#3.variable file
+#4.variable in prompt
