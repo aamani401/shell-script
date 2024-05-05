@@ -1,7 +1,7 @@
 - name: vars sequence
   hosts: web
-  vars:
-    username: "aam-from-playbook"
+  # vars:
+  #   username: "aam-from-playbook"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
@@ -17,3 +17,5 @@
 #2.variable in task
 #3.variable file
 #4.variable in prompt
+#5.variable from play book
+#6.var from inventory.ini
