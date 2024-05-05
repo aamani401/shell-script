@@ -6,6 +6,6 @@
     ansible.builtin.command: id expense
       register: USERID
       ignore_errors: true
-  -name: see the putput
+  - name: see the putput
     ansible.builtin.debug:
       msg: "see the output {{USERID}}"
